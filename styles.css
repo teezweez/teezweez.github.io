@@ -295,6 +295,14 @@ main {
   box-shadow: 0 0 0 4px var(--bg);
 }
 
+.tl-node-live {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 8px var(--teal);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.dot-inline { display: inline-block; vertical-align: middle; margin-right: 6px; }
+
 .tl-date { color: var(--teal); font-size: 12px; margin-bottom: 6px; }
 .tl-card h3 { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 2px; }
 .tl-org { color: var(--text-faint); font-size: 13px; margin-bottom: 10px; }
@@ -336,6 +344,20 @@ main {
 .card-links a:hover { color: #f5b877; }
 
 .card-live { border-color: var(--amber-dim); }
+
+/* ========================================================
+   PROJECT DETAIL PAGE
+   ======================================================== */
+.detail-section { padding: 64px 0 100px; }
+
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--text-dim); font-size: 13px; margin-bottom: 32px; }
+.back-link:hover { color: var(--amber); }
+
+.detail-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(32px, 5vw, 48px); line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 12px; }
+
+.detail-eyebrow { margin-bottom: 28px; }
+
+.detail-stack { margin-top: 40px; }
 
 /* ========================================================
    SKILLS
