@@ -1,23 +1,54 @@
 // ---------- Hero typing effect ----------
 const typedEl = document.getElementById('typed');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const typedText = 'whoami';
+const typedCommands = [
+  'whoami',
+  'cd timi/folayan',
+  'cat about.md',
+  './calibrate --valves 1000000',
+  'grep -r "hardware" ./interests',
+  'git commit -m "graduating May 2027"',
+  'ssh sde@emerson-austin',
+  'sudo apt install formal-methods',
+];
 
-function typeOut(el, text, speed = 90) {
-  let i = 0;
-  el.textContent = '';
-  const interval = setInterval(() => {
-    el.textContent += text[i];
-    i++;
-    if (i >= text.length) clearInterval(interval);
-  }, speed);
+function typeLoop(el, commands, opts = {}) {
+  const { typeSpeed = 90, deleteSpeed = 40, holdTime = 1400, gapTime = 400 } = opts;
+  let cmdIndex = 0;
+
+  function typePhase() {
+    const text = commands[cmdIndex];
+    let i = 0;
+    el.textContent = '';
+    const interval = setInterval(() => {
+      el.textContent += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        setTimeout(deletePhase, holdTime);
+      }
+    }, typeSpeed);
+  }
+
+  function deletePhase() {
+    const interval = setInterval(() => {
+      el.textContent = el.textContent.slice(0, -1);
+      if (el.textContent.length === 0) {
+        clearInterval(interval);
+        cmdIndex = (cmdIndex + 1) % commands.length;
+        setTimeout(typePhase, gapTime);
+      }
+    }, deleteSpeed);
+  }
+
+  typePhase();
 }
 
 if (typedEl) {
   if (prefersReducedMotion) {
-    typedEl.textContent = typedText;
+    typedEl.textContent = typedCommands[0];
   } else {
-    typeOut(typedEl, typedText);
+    typeLoop(typedEl, typedCommands);
   }
 }
 

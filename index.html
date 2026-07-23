@@ -20,14 +20,14 @@
   <div class="panel-brand"><span class="dot dot-live"></span>gloryboy.</div>
   <ul class="panel-list">
     <li><a href="#about" data-section="about"><span class="led"></span><span class="panel-label">about</span></a></li>
-    <li><a href="#Education" data-section="education"><span class="led"></span><span class="panel-label">education</span></a></li>
+    <li><a href="#education" data-section="education"><span class="led"></span><span class="panel-label">education</span></a></li>
     <li><a href="#experience" data-section="experience"><span class="led"></span><span class="panel-label">experience</span></a></li>
     <li><a href="#projects" data-section="projects"><span class="led"></span><span class="panel-label">projects</span></a></li>
     <li><a href="#skills" data-section="skills"><span class="led"></span><span class="panel-label">skills</span></a></li>
     <li><a href="#leadership" data-section="leadership"><span class="led"></span><span class="panel-label">leadership</span></a></li>
     <li><a href="#contact" data-section="contact"><span class="led"></span><span class="panel-label">contact</span></a></li>
   </ul>
-  <a class="panel-resume" href="resume.pdf" target="_blank" rel="noopener">↓ resume.pdf</a>
+  <a class="panel-resume" href="Resume.pdf" target="_blank" rel="noopener" download>↓ resume.pdf</a>
 </nav>
 
 <main>
@@ -36,7 +36,7 @@
   <section class="hero" id="top">
     <p class="mono eyebrow"><span class="prompt">timi@portfolio:~$</span> <span id="typed"></span><span class="cursor">▌</span></p>
     <h1 class="hero-title">Timi <span class="hero-lastname">Folayan</span></h1>
-    <p class="hero-sub">Software engineer with a measurement-systems streak — I write code, but I've also spent a summer explaining data acquisition hardware to people who need to trust it.</p>
+    <p class="hero-sub">Software engineer with a measurement-systems streak - I write code, but I've also spent a summer explaining data acquisition hardware to people who need to trust it.</p>
     <p class="hero-role mono">Software Engineering @ Rose-Hulman '27 &nbsp;·&nbsp; SDE Intern @ Emerson (NI), Austin TX</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View projects</a>
@@ -53,14 +53,23 @@
   <section class="section" id="about">
     <h2 class="section-head"><span class="mono tag">01</span> About</h2>
     <div class="section-body about-body">
-      <p>I'm a Software Engineering student at Rose-Hulman Institute of Technology (minoring in Cybersecurity), graduating May 2027. Last summer I was the sole software engineer on a multidisciplinary team building the full software stack behind a gas valve calibration system - this summer I'm a Sales Development Engineering Intern at Emerson in Austin, a role that sits right at the intersection of the two things I'm building toward: writing solid software, and being able to explain technical systems clearly to the people who have to rely on them.</p>
-      <p>Outside of internships and coursework, I TA for a formal methods course, work as a Learning Advisor helping 6th-12th graders with STEM homework, and I'm an advit music enjoyer/creator, content creator, gamer, and fly guy.</p>
+      <img class="about-photo" src="headshot.jpg" alt="Timi Folayan" width="140" height="140">
+      <div class="about-text">
+        <p>I'm a Software Engineering student at Rose-Hulman Institute of Technology (minoring in Geography), graduating May 2027. Last summer I was the sole software engineer on a multidisciplinary team building the full software stack behind a gas valve calibration system - this summer I'm a Sales Development Engineering Intern at Emerson in Austin, a role that sits right at the intersection of the two things I'm building toward: writing solid software, and being able to explain technical systems clearly to the people who have to rely on them.</p>
+        <p>Outside of internships and coursework, I TA for a formal methods course, work as a Learning Advisor helping 6th-12th graders with STEM homework, and I'm an avid music enjoyer/creator, content creator, gamer, and fly guy.</p>
+      </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section class="section" id="education">
-    <article class="tl-item">
+    <h2 class="section-head"><span class="mono tag">02</span> Education</h2>
+    <div class="timeline">
+      <svg class="timeline-trace" viewBox="0 0 40 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M20,0 L20,180 L8,200 L8,380 L20,400" />
+      </svg>
+
+      <article class="tl-item">
         <div class="tl-node"></div>
         <div class="tl-card">
           <p class="mono tl-date">Expected May 2027</p>
@@ -69,12 +78,22 @@
           <p>Coursework in Object-Oriented Development, Operating Systems, Web Development, DSA, Digital Systems, Databases, Practical Security, Mathematical Proofs, Formal Methods, and Combinatorics.</p>
         </div>
       </article>
+
+      <article class="tl-item">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <p class="mono tl-date">Aug 2022 - Apr 2023</p>
+          <h3>B.S. Computer Engineering</h3>
+          <p class="tl-org">Michigan Technological University · Houghton, MI</p>
+          <p>Relevant coursework: Intro to Programming I, Spatial Visualization, and Engineering Analysis. Transferred to Rose-Hulman Institute of Technology after the first year.</p>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
-    <h2 class="section-head"><span class="mono tag">02</span> Experience</h2>
+    <h2 class="section-head"><span class="mono tag">03</span> Experience</h2>
     <div class="timeline">
       <svg class="timeline-trace" viewBox="0 0 40 900" preserveAspectRatio="none" aria-hidden="true">
         <path d="M20,0 L20,180 L8,200 L8,380 L20,400 L20,580 L8,600 L8,780 L20,800 L20,900" />
@@ -103,20 +122,20 @@
       <article class="tl-item">
         <div class="tl-node"></div>
         <div class="tl-card">
-          <p class="mono tl-date">Spring 2025 — Present</p>
+          <p class="mono tl-date">Spring 2025</p>
           <h3>Teaching Assistant, Formal Methods</h3>
           <p class="tl-org">Rose-Hulman Institute of Technology</p>
-          <p>Support undergraduates in mastering formal methods — logic, specifications, and program correctness. Grade assignments and give detailed feedback on formal proofs and model-based designs, and maintain the automated grading pipeline, including tracking down a mismatched build-output path that was silently failing an entire lab's submissions.</p>
+          <p>Support undergraduates in mastering formal methods - logic, specifications, and program correctness. Grade assignments and give detailed feedback on formal proofs and model-based designs, and maintain the automated grading pipeline, including tracking down a mismatched build-output path that was silently failing an entire lab's submissions.</p>
         </div>
       </article>
 
       <article class="tl-item">
         <div class="tl-node"></div>
         <div class="tl-card">
-          <p class="mono tl-date">Winter 2024 — Present</p>
+          <p class="mono tl-date">Winter 2024 - Present</p>
           <h3>Learning Advisor</h3>
           <p class="tl-org">Ask Rose · Terre Haute, IN</p>
-          <p>Help students in grades 6–12 with STEM homework across math, physics, and computer science — 99% student satisfaction rate. Guide students through problem-solving techniques rather than just answers, with 80% reporting increased confidence.</p>
+          <p>Help students in grades 6-12 with STEM homework across math, physics, and computer science - 99% student satisfaction rate. Guide students through problem-solving techniques rather than just answers, with 80% reporting increased confidence.</p>
         </div>
       </article>
       
@@ -125,7 +144,7 @@
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <h2 class="section-head"><span class="mono tag">03</span> Projects</h2>
+    <h2 class="section-head"><span class="mono tag">04</span> Projects</h2>
     <div class="card-grid">
 
       <article class="card">
@@ -133,7 +152,7 @@
         <div class="card-corner bl"></div><div class="card-corner br"></div>
         <p class="mono card-eyebrow">SQL · JAVA · SQL SERVER</p>
         <h3>Lost and Found Database</h3>
-        <p>A full database system for a lost and found application on Microsoft SQL Server, cutting item retrieval time by 40%. Built a Java UI for admins and users on top of it, applying object-oriented design and Java–SQL connectivity for a maintainable, scalable system.</p>
+        <p>A full database system for a lost and found application on Microsoft SQL Server, cutting item retrieval time by 40%. Built a Java UI for admins and users on top of it, applying object-oriented design and Java-SQL connectivity for a maintainable, scalable system.</p>
         <div class="card-links">
           <a href="#" class="mono">source →</a>
         </div>
@@ -144,7 +163,7 @@
         <div class="card-corner bl"></div><div class="card-corner br"></div>
         <p class="mono card-eyebrow">JAVA · MAVEN</p>
         <h3>Settlers of Catan</h3>
-        <p>A multi-package Java implementation of Catan. Untangled classpath issues and internationalization resource-bundle loading across a fresh build environment — the kind of bug that only shows up when the project structure gets real.</p>
+        <p>A multi-package Java implementation of Catan. Untangled classpath issues and internationalization resource-bundle loading across a fresh build environment - the kind of bug that only shows up when the project structure gets real.</p>
         <div class="card-links">
           <a href="#" class="mono">source →</a>
         </div>
@@ -154,7 +173,7 @@
         <div class="card-corner tl"></div><div class="card-corner tr"></div>
         <div class="card-corner bl"></div><div class="card-corner br"></div>
         <p class="mono card-eyebrow">HARDWARE · NI</p>
-        <h3>MioDAQ — Tech Expo</h3>
+        <h3>MioDAQ - Tech Expo</h3>
         <p>Presented Emerson's MioDAQ data-acquisition hardware at an internal Tech Expo, closing the gap between my software background and measurement-systems fundamentals well enough to explain it to a room of engineers.</p>
         <div class="card-links">
           <a href="#" class="mono">details →</a>
@@ -166,9 +185,53 @@
         <div class="card-corner bl"></div><div class="card-corner br"></div>
         <p class="mono card-eyebrow"><span class="dot dot-live"></span>PYTHON · ONGOING</p>
         <h3>DSA From Scratch</h3>
-        <p>A structured, self-directed rebuild of my data-structures fundamentals: plain-English approach before code, a 25–35 minute struggle timer, and cold re-solves the next day. Building real pattern recognition in hashmaps and two-pointer problems.</p>
+        <p>A structured, self-directed rebuild of my data-structures fundamentals: plain-English approach before code, a 25-35 minute struggle timer, and cold re-solves the next day. Building real pattern recognition in hashmaps and two-pointer problems.</p>
         <div class="card-links">
           <a href="#" class="mono">progress log →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <p class="mono card-eyebrow">PYTHON · FASTAPI · ML · K8S</p>
+        <h3>NBA Player Predictor</h3>
+        <p>A backend web application predicting an NBA player's next-game point total against a specific opponent, built as a full production ML system rather than just a notebook. Trained a RandomForestRegressor on real player and team data from PostgreSQL, engineering matchup-aware features like scoring averages and opponent points allowed, then tracked 10 experiment runs in MLflow and promoted the best one to the Model Registry. The trained model runs as its own containerized service, deployed through a GitHub Actions CI/CD pipeline that auto-ships to a GKE QA cluster and gates production behind manual approval.</p>
+        <div class="card-links">
+          <a href="#" class="mono">details →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <p class="mono card-eyebrow">JAVA · ECLIPSE IDE</p>
+        <h3>Editor Trees</h3>
+        <p>Designed and implemented a complex custom data structure from its theoretical foundations up, with algorithms planned out before implementation rather than written ad hoc. Built collaboratively, with a focus on getting the underlying theory right first.</p>
+        <div class="card-links">
+          <a href="#" class="mono">source →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <p class="mono card-eyebrow">HTML · CSS · JAVASCRIPT</p>
+        <h3>Online Sports Webstore</h3>
+        <p>An online web store built from scratch with a responsive HTML/CSS/JavaScript interface, driving a 50% increase in user engagement. Implemented CRUD operations for dynamic product management and order processing, cutting order errors by 25%. Pair-programmed with a teammate to integrate real-time product and order-tracking features.</p>
+        <div class="card-links">
+          <a href="#" class="mono">source →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <p class="mono card-eyebrow">JAVA · ECLIPSE IDE</p>
+        <h3>Jetpack Joyride (game clone)</h3>
+        <p>Led a team building a Jetpack Joyride-inspired game, directing concept, design specs, and feature development including jetpack flight, barrier collision detection, and missile behavior. Architected the game's class structure with a UML diagram built on Object-Oriented Design principles before writing code.</p>
+        <div class="card-links">
+          <a href="#" class="mono">source →</a>
         </div>
       </article>
 
@@ -177,7 +240,7 @@
 
   <!-- SKILLS -->
   <section class="section" id="skills">
-    <h2 class="section-head"><span class="mono tag">04</span> Skills</h2>
+    <h2 class="section-head"><span class="mono tag">05</span> Skills</h2>
     <div class="skills-grid">
       <div class="skill-group">
         <p class="mono skill-label">languages</p>
@@ -186,6 +249,10 @@
       <div class="skill-group">
         <p class="mono skill-label">tools & platforms</p>
         <p>Git · VS Code · IntelliJ · Eclipse IDE · Firebase · React · Mathematica</p>
+      </div>
+      <div class="skill-group">
+        <p class="mono skill-label">backend & mlops</p>
+        <p>FastAPI · PostgreSQL · Docker · Kubernetes (GKE) · MLflow · scikit-learn · GitHub Actions (CI/CD)</p>
       </div>
       <div class="skill-group">
         <p class="mono skill-label">hardware / lab</p>
@@ -200,18 +267,18 @@
 
   <!-- LEADERSHIP -->
   <section class="section" id="leadership">
-    <h2 class="section-head"><span class="mono tag">05</span> Leadership</h2>
+    <h2 class="section-head"><span class="mono tag">06</span> Leadership</h2>
     <div class="skills-grid">
       <div class="skill-group">
-        <p class="mono skill-label">2024 — present</p>
+        <p class="mono skill-label">2024 - present</p>
         <p><strong>Vice President</strong>, African Student Union</p>
       </div>
       <div class="skill-group">
-        <p class="mono skill-label">2024 — present</p>
-        <p><strong>(Former) Public Relations Chair, Member</strong>, National Society of Black Engineers</p>
+        <p class="mono skill-label">2024 - present</p>
+        <p><strong>Member</strong> (Former Public Relations Chair), National Society of Black Engineers</p>
       </div>
       <div class="skill-group">
-        <p class="mono skill-label">2023 — present</p>
+        <p class="mono skill-label">2023 - present</p>
         <p><strong>Member</strong>, Linux Users Group & Computer Security Club</p>
       </div>
     </div>
@@ -219,7 +286,7 @@
 
   <!-- CONTACT -->
   <section class="section section-contact" id="contact">
-    <h2 class="section-head"><span class="mono tag">06</span> Contact</h2>
+    <h2 class="section-head"><span class="mono tag">07</span> Contact</h2>
     <p class="contact-lead">Open to full-time SWE and solutions engineering roles starting May 2027 - and happy to talk shop before then.</p>
     <div class="contact-links">
       <a href="mailto:folayaod@rose-hulman.edu" class="btn btn-primary">folayaod@rose-hulman.edu</a>
@@ -230,7 +297,7 @@
 
   <footer class="footer mono">
     <span id="clock"></span>
-    <span>built with html · css · js — no framework</span>
+    <span>built with html · css · js - no framework</span>
   </footer>
 
 </main>

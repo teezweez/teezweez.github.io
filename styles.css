@@ -248,8 +248,19 @@ main {
 }
 .tag { color: var(--amber); font-size: 14px; }
 
-.about-body p { color: var(--text-dim); max-width: 62ch; margin-bottom: 16px; }
-.about-body p:last-child { margin-bottom: 0; }
+.about-body { display: flex; gap: 32px; align-items: flex-start; }
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.about-text p { color: var(--text-dim); max-width: 62ch; margin-bottom: 16px; }
+.about-text p:last-child { margin-bottom: 0; }
 
 /* ========================================================
    TIMELINE (experience)
@@ -384,4 +395,6 @@ main {
   .section { padding: 64px 0; }
   .timeline { padding-left: 32px; }
   .tl-node { left: -32px; }
+  .about-body { flex-direction: column; }
+  .about-photo { width: 120px; height: 120px; }
 }
